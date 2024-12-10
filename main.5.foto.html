@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Суреттер</title>
+<style>
+    h1 {
+        color: rgb(73, 1, 74);
+        font-size: 100px;
+        transition: color 0.3s ease;
+    }
+    h1:hover {
+        color: blue;
+    }
+    th img {
+        width: 400px;
+        height: 300px;
+        border: 2px solid rgb(65, 18, 0);
+        border-radius: 13px;
+        box-shadow: 4px 7px 7px 0px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        margin: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    th img:hover {
+        transform: scale(1.03);
+        box-shadow: 6px 10px 15px rgba(0, 0, 0, 0.7);
+    }
+    table {
+        border: 10px double;
+        border-color: rgb(166, 173, 76);
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 25px;
+        margin: 0 auto;
+    }
+    body {
+        background-image: url("https://avatars.mds.yandex.net/i?id=8a791a8f4b9c8e62d6cd7318d59fe6cc7b9c4f05-10287336-images-thumbs&n=13");
+        background-repeat: no-repeat;
+        padding: 15px;
+        height: 100vh;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 500px;
+        transition: opacity 1s ease;
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        animation: zoomIn 1s ease;
+        border-radius: 15px;
+    }
+    @keyframes zoomIn {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .modal img{
+        width: 1600px;
+    }
+    .modal{
+        padding-top: 15vh;
+    }
+</style>
+</head>
+<body>
+
+<center><h1>Суреттері</h1></center>
+
+<table>
+<tr>
+<th>
+    <img src="https://avatars.mds.yandex.net/i?id=cae30bf8fbfec37749f26783c532cbedb6ebc4bc18222d53-5233153-images-thumbs&n=13" alt="Image 1" onclick="openModal(this.src)">
+    <img src="https://avatars.mds.yandex.net/i?id=57488b9555beec6af46d16ed6844cd415a9ac761-11003961-images-thumbs&n=13" alt="Image 2" onclick="openModal(this.src)">
+    <img src="https://avatars.mds.yandex.net/i?id=b01b1ee4dc1570fc80efe05a801d4af56fcc9f81-3831708-images-thumbs&n=13" alt="Image 3" onclick="openModal(this.src)">
+    <img src="https://avatars.mds.yandex.net/i?id=3c2adb10a5084167158069c015f1b04903e4eec6-7593915-images-thumbs&n=13" alt="Image 4" onclick="openModal(this.src)">
+    <img src="https://avatars.mds.yandex.net/i?id=40bd2e53556dba5cc14d9244619736a03c8c3440-13083831-images-thumbs&n=13" alt="Image 5" onclick="openModal(this.src)"> 
+    <img src="https://cdn1.ozone.ru/s3/multimedia-4/c600/6254111044.jpg" alt="Image 6" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=39c6716d60babe6a1546c16926b20d65385938a6-10414509-images-thumbs&n=13" alt="Image 7" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=f7453b4aeaf86ecf107858afea42ad42789a2798-13104117-images-thumbs&n=13" alt="Image 8" onclick="openModal(this.src)">
+    <img src="https://avatars.mds.yandex.net/i?id=af44ff59a4b2b47ba85d459bd3c94b15071aefb3993095ef-12640276-images-thumbs&n=13" alt="Image 9" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=0186ed9cd91b36eda3974375c97230a057ec7bbd-3709311-images-thumbs&n=13" alt="Image 10" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=b443a864a15599f4a54adfc30d35467172bd426d-4227442-images-thumbs&n=13" alt="Image 11" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=474f1aa72c5cf7e2a3cf05e26e08cbcb5780c564-10675382-images-thumbs&n=13" alt="Image 12" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=16825bfbd90efddfa471cda25bb3192bdc5c2b6d-10700059-images-thumbs&n=13" alt="Image 13" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=8fc5ecf50a09d2097f56dc631119b166f3e5afb1-5440551-images-thumbs&n=13" alt="Image 14" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=639f865544b1dcea37d0ef46644e78663268f195-12805659-images-thumbs&n=13" alt="Image 15" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=c80631b4c61516454be6dc7e2b319b3192671d2a-9844228-images-thumbs&n=13" alt="Image 16" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=fd7e173282fc31e3a4f710e8e4574fa2c1b7aa2a-8544532-images-thumbs&n=13" alt="Image 17" onclick="openModal(this.src)"> 
+    <img src="https://avatars.mds.yandex.net/i?id=90bab0772cacd319b8baaf33ee0106a23e11874d-5263409-images-thumbs&n=13" alt="Image 18" onclick="openModal(this.src)">
+</th>
+</tr>
+</table>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="img01">
+</div>
+<script>
+    function openModal(src) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = src;
+    }
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+</body>
+</html>

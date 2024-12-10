@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео</title>
+    <style>
+        body {
+            background-image: url("https://avatars.mds.yandex.net/i?id=42b5222ae202f707729419aac11b7102d3b73f9d-9107119-images-thumbs&n=13");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 15px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            color: rgb(4, 94, 17);
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            transition: color 0.4s ease;
+        }
+
+        h1:hover {
+            color: black;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 20px;
+            transition: color 0.4s ease;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        h2:hover {
+            color: #fff;
+        }
+
+        iframe {
+            width: 80%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 15px;
+            border: 5px solid #444;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-right: 850px;
+        }
+
+        iframe:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            margin-right: 850px;
+        }
+        h2 {
+            margin-right: 850px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Видео ойын</h1>
+    <iframe src="https://vk.com/video_ext.php?oid=-28639294&id=456258014&hash=707b08b49adbf608" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <h1>Видео гол</h1>
+    <iframe src="https://vk.com/video_ext.php?oid=-132452534&id=456239072&hash=3a09081f583d4153" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <h1>Видео монтаж</h1>
+    <iframe src="https://vk.com/video_ext.php?oid=-23693281&id=456252470&hash=6d7105f741e51fb2" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</body>
+</html>
